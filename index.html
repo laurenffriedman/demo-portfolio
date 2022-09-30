@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Flexbox styling</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100&family=Special+Elite&display=swap" rel="stylesheet">
+
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <section class="top">
+        <h1>:: Lauren Friedman</h1>
+      </section>
+
+      <!-- <section class="photo"> -->
+
+      <figure>
+        <img class="main_img" src="images/headshot.jpg">
+        <figcaption>Jax is ready for his close-up. <span class="credit">Credit: SG</span></figcaption>
+      </figure>
+
+      <section class="text">
+        <p>I’m a health and science journalist, writer, and editor based in Queens. I’m currently the lead health editor at Consumer Reports and an adjunct lecturer at the Craig Newmark Graduate School of Journalism at CUNY.</p>
+
+        <p>Previously, I was a deputy editor at Consumer Reports, a senior science editor at Business Insider, a staff editor at Psychology Today, and a contributing writer at Philadelphia City Paper. My work has also been published in Scientific American, Scientific American Mind, The Philadelphia Inquirer, The Philadelphia Daily News, GOOD, and other outlets.</p>
+
+      </section>
+
+      <h3 class="flex-hed">Stories</h3> <!-- broke the subhed out of text to correct alignment based on mock -->
+
+      <section class="flex">
+        <!-- flex box refers to the box that contains the "flexed" content -->
+
+        <section class="img_holder">
+          <!-- each img_holder is flexed content -->
+          <figure class="sub_img">
+            <img class="small" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ReusableWaterBottle.jpg/900px-ReusableWaterBottle.jpg"> <!-- You should crop your images to be the same size before using them, otherwise, even with flex box, they come out uneven -->
+            <figcaption class="sub_cap"><span class="credit">Credit: Bibeyjj, Wikimedia Commons</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p><a href="https://www.consumerreports.org/bpa/bpa-exposure-may-be-much-greater-than-previously-believed/">BPA Exposure May Be Greater Than Previously Believed</a> <br> Consumer Reports <br>The chemical, found in common products like reusable plastic water bottles, has been linked to certain health issues
+            </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/soup.jpg">
+            <figcaption class="sub_cap"><span class="credit">Credit: Tiberius Cesear</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p> <a href="https://www.businessinsider.com/cure-for-common-cold-vaccine-2016-10">Why We Don't Have a Cure for the Common Cold</a><br>Business Insider<br>Modern science has extended life expectancy and made huge gains in battling deadly diseases. So why can't we knock out the humble cold? </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="https://upload.wikimedia.org/wikipedia/commons/6/63/International_Space_Station_Over_Miami%2C_Florida.jpg">
+            <figcaption class="sub_cap"><span class="credit">Credit: NASA</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p><a href="https://www.psychologytoday.com/intl/articles/201311/what-it-s-live-in-space">What It's Like to Live in Space</a><br>Psychology Today<br>Astronaut Tracy Caldwell Dyson reflects on the six months she spent aboard the International Space Station.</p>
+          </section>
+        </section>
+
+      </section>
+      <!-- this ^ closes the flex box section -->
+
+    </div>
+
+    <!-- When you get to using javascript, you'll want to link to it at the bottom of the document, still inside the body. That's for later. -->
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+  </body>
+
+</html>
